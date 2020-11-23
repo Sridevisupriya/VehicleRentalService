@@ -103,3 +103,13 @@ INFO  09:57:31 Get BookingDetails by Id accessed
 INFO  09:57:53 Book Details Getting Added
 INFO  09:57:59 Get BookingDetails by Id accessed
 INFO  09:59:53 Get BookingDetails by Id accessed
+INFO  02:06:39 Application started. Press Ctrl+C to shut down.
+INFO  02:06:39 Application started. Press Ctrl+C to shut down.
+INFO  02:06:39 Hosting environment: Development
+INFO  02:06:39 Hosting environment: Development
+INFO  02:06:40 Content root path: C:\Users\Devi\Source\Repos\VehicleRentalService\SimulationProject\BookingService
+INFO  02:06:40 Content root path: C:\Users\Devi\Source\Repos\VehicleRentalService\SimulationProject\BookingService
+INFO  02:09:36 Get BookingDetails by Id accessed
+INFO  02:09:47 Get BookingDetails by Id accessed
+INFO  02:10:02 Book Details Getting Added
+INFO  02:10:06 Get BookingDetails by Id accessed

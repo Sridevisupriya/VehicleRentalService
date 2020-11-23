@@ -332,3 +332,13 @@ INFO  11:12:30 Hosting environment: Development
 INFO  11:12:30 Hosting environment: Development
 INFO  11:12:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
 INFO  11:12:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  02:08:01 Application started. Press Ctrl+C to shut down.
+INFO  02:08:01 Application started. Press Ctrl+C to shut down.
+INFO  02:08:01 Hosting environment: Development
+INFO  02:08:01 Hosting environment: Development
+INFO  02:08:01 Content root path: C:\Users\Devi\Source\Repos\VehicleRentalService\VehicleService\VehicleService
+INFO  02:08:01 Content root path: C:\Users\Devi\Source\Repos\VehicleRentalService\VehicleService\VehicleService
+INFO  02:09:21  Http GET is accesed
+INFO  02:09:54  Http GET by is accesed 6
+INFO  02:10:02  Http GET by is accesed 6
+INFO  02:10:04  Http GET is accesed
