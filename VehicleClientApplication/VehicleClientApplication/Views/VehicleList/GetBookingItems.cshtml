@@ -1,0 +1,63 @@
+﻿@model IEnumerable<VehicleClientApplication.Models.Booking>
+
+@{
+    ViewData["Title"] = "GetBookingItems";
+}
+
+
+<p>
+    <h1>Booking Details</h1>
+    <h5>Here is your Booking Details  @ViewBag.Customer_Name</h5>
+    <h6>Thanks for choosing our service.</h6>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vehicle_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.No_ofMonth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Booking_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vehicle_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.No_ofMonth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCost)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,334 @@
+INFO  07:55:17 Application started. Press Ctrl+C to shut down.
+INFO  07:55:17 Application started. Press Ctrl+C to shut down.
+INFO  07:55:17 Hosting environment: Development
+INFO  07:55:17 Hosting environment: Development
+INFO  07:55:17 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  07:55:17 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  07:55:56  Http GET is accesed
+INFO  07:56:21  Http GET is accesed
+INFO  08:03:29 Application started. Press Ctrl+C to shut down.
+INFO  08:03:29 Application started. Press Ctrl+C to shut down.
+INFO  08:03:29 Hosting environment: Development
+INFO  08:03:29 Hosting environment: Development
+INFO  08:03:29 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:03:29 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:04:43 Application started. Press Ctrl+C to shut down.
+INFO  08:04:43 Application started. Press Ctrl+C to shut down.
+INFO  08:04:43 Hosting environment: Development
+INFO  08:04:43 Hosting environment: Development
+INFO  08:04:43 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:04:43 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:04:57  Http GET by is accesed 3
+INFO  08:39:46 Application started. Press Ctrl+C to shut down.
+INFO  08:39:46 Application started. Press Ctrl+C to shut down.
+INFO  08:39:46 Hosting environment: Development
+INFO  08:39:46 Hosting environment: Development
+INFO  08:39:46 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:39:46 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:40:10  Http GET by is accesed 1
+INFO  08:40:48  Http GET by is accesed 3
+INFO  12:25:39 Application started. Press Ctrl+C to shut down.
+INFO  12:25:39 Application started. Press Ctrl+C to shut down.
+INFO  12:25:39 Hosting environment: Development
+INFO  12:25:39 Hosting environment: Development
+INFO  12:25:40 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  12:25:40 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  12:27:13  Http GET by is accesed 1
+ERROR 12:28:13 An error occurred using the connection to database 'BookingDatabase' on server '(localdb)\MSSQLLocalDB'.
+ERROR 12:28:13 An error occurred using the connection to database 'BookingDatabase' on server '(localdb)\MSSQLLocalDB'.
+ERROR 12:28:15 An exception occurred while iterating over the results of a query for context type 'VehicleService.Models.VehicleDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=51883; handshake=336; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:1ae21234-5436-40ee-b701-0ad23987c0bd
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=51883; handshake=336; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:1ae21234-5436-40ee-b701-0ad23987c0bd
+Error Number:-2,State:0,Class:11
+ERROR 12:28:15 An exception occurred while iterating over the results of a query for context type 'VehicleService.Models.VehicleDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=51883; handshake=336; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:1ae21234-5436-40ee-b701-0ad23987c0bd
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=51883; handshake=336; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:1ae21234-5436-40ee-b701-0ad23987c0bd
+Error Number:-2,State:0,Class:11
+ERROR 12:28:17 Error in Get by id Request
+INFO  12:28:22  Http GET by is accesed 1
+INFO  12:30:49 Application started. Press Ctrl+C to shut down.
+INFO  12:30:49 Application started. Press Ctrl+C to shut down.
+INFO  12:30:49 Hosting environment: Development
+INFO  12:30:49 Hosting environment: Development
+INFO  12:30:49 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  12:30:49 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  12:31:37  Http GET by is accesed 1
+INFO  12:32:35  Http GET is accesed
+INFO  12:45:07  Http GET is accesed
+INFO  12:47:52  Http GET is accesed
+INFO  12:52:03  Http GET is accesed
+INFO  01:31:06  Http GET is accesed
+INFO  01:45:18  Http GET is accesed
+INFO  01:59:30  Http GET is accesed
+INFO  02:01:47  Http GET is accesed
+INFO  02:03:14  Http GET by is accesed 1
+INFO  02:06:25  Http GET is accesed
+INFO  02:06:55  Http GET by is accesed 1
+INFO  02:06:56  Http GET is accesed
+INFO  02:15:12  Http GET is accesed
+INFO  02:15:32  Http GET by is accesed 1
+INFO  02:43:47  Http GET is accesed
+INFO  02:44:25  Http GET by is accesed 1
+INFO  02:48:24  Http GET is accesed
+INFO  02:48:51  Http GET by is accesed 1
+INFO  02:53:30  Http GET is accesed
+INFO  02:53:57  Http GET by is accesed 1
+INFO  02:54:21  Http GET is accesed
+INFO  03:04:50  Http GET is accesed
+INFO  03:05:13  Http GET by is accesed 1
+INFO  03:05:34  Http GET is accesed
+INFO  03:06:57  Http GET is accesed
+INFO  03:07:26  Http GET is accesed
+INFO  03:07:44  Http GET by is accesed 1
+INFO  03:07:59  Http GET is accesed
+INFO  03:18:34  Http GET is accesed
+INFO  03:27:45  Http GET is accesed
+INFO  03:32:22  Http GET is accesed
+INFO  03:38:51  Http GET is accesed
+INFO  03:46:14  Http GET is accesed
+INFO  03:54:38  Http GET is accesed
+INFO  03:56:11  Http GET by is accesed 4
+INFO  03:56:13  Http GET is accesed
+INFO  04:00:10  Http GET is accesed
+INFO  04:03:16  Http GET is accesed
+INFO  04:08:12  Http GET is accesed
+INFO  04:54:45  Http GET is accesed
+INFO  04:56:21  Http GET is accesed
+INFO  04:59:01  Http GET is accesed
+INFO  04:59:59  Http GET by is accesed 2
+INFO  05:00:00  Http GET is accesed
+INFO  05:02:41  Http GET is accesed
+INFO  05:03:19  Http GET by is accesed 3
+INFO  05:03:19  Http GET is accesed
+INFO  08:25:52 Application started. Press Ctrl+C to shut down.
+INFO  08:25:52 Application started. Press Ctrl+C to shut down.
+INFO  08:25:52 Hosting environment: Development
+INFO  08:25:52 Hosting environment: Development
+INFO  08:25:53 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:25:53 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:28:52  Http GET is accesed
+INFO  08:29:31  Http GET is accesed
+INFO  08:30:50  Http GET is accesed
+INFO  08:35:08  Http GET is accesed
+INFO  08:35:54  Http GET is accesed
+INFO  08:50:15 Application started. Press Ctrl+C to shut down.
+INFO  08:50:15 Application started. Press Ctrl+C to shut down.
+INFO  08:50:15 Hosting environment: Development
+INFO  08:50:15 Hosting environment: Development
+INFO  08:50:15 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:50:15 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  09:20:43 Application started. Press Ctrl+C to shut down.
+INFO  09:20:43 Application started. Press Ctrl+C to shut down.
+INFO  09:20:43 Hosting environment: Development
+INFO  09:20:43 Hosting environment: Development
+INFO  09:20:43 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  09:20:43 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  09:22:32 Application started. Press Ctrl+C to shut down.
+INFO  09:22:32 Application started. Press Ctrl+C to shut down.
+INFO  09:22:32 Hosting environment: Development
+INFO  09:22:32 Hosting environment: Development
+INFO  09:22:32 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  09:22:32 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  09:24:01  Http GET is accesed
+INFO  09:24:46  Http GET by is accesed 1
+INFO  09:28:26  Http GET is accesed
+INFO  09:28:39  Http GET is accesed
+INFO  09:34:44  Http GET is accesed
+INFO  09:39:05  Http GET is accesed
+INFO  09:39:38  Http GET is accesed
+INFO  09:40:16  Http GET is accesed
+INFO  10:22:26 Application started. Press Ctrl+C to shut down.
+INFO  10:22:26 Application started. Press Ctrl+C to shut down.
+INFO  10:22:26 Hosting environment: Development
+INFO  10:22:26 Hosting environment: Development
+INFO  10:22:26 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  10:22:26 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  10:22:36  Http GET is accesed
+INFO  10:22:50  Http GET by is accesed 1
+INFO  10:25:34  Http GET is accesed
+INFO  10:25:37  Http GET is accesed
+INFO  10:30:37  Http GET is accesed
+INFO  10:30:40  Http GET by is accesed 1
+INFO  10:31:42  Http GET by is accesed 2
+INFO  10:31:51  Http GET is accesed
+INFO  10:33:09  Http GET is accesed
+INFO  10:33:12  Http GET by is accesed 2
+INFO  10:33:43  Http GET by is accesed 2
+INFO  10:33:46  Http GET is accesed
+INFO  10:34:43  Http GET is accesed
+INFO  10:34:47  Http GET by is accesed 2
+INFO  10:35:09  Http GET by is accesed 2
+INFO  10:35:14  Http GET is accesed
+INFO  10:35:54  Http GET is accesed
+INFO  10:36:04  Http GET by is accesed 3
+INFO  10:36:17  Http GET is accesed
+INFO  10:39:23  Http GET is accesed
+INFO  10:40:09  Http GET is accesed
+INFO  10:42:14  Http GET is accesed
+INFO  10:49:53  Http GET is accesed
+INFO  10:50:03  Http GET by is accesed 7
+INFO  10:50:21  Http GET by is accesed 7
+INFO  10:50:25  Http GET is accesed
+INFO  08:50:30 Application started. Press Ctrl+C to shut down.
+INFO  08:50:30 Application started. Press Ctrl+C to shut down.
+INFO  08:50:30 Hosting environment: Development
+INFO  08:50:30 Hosting environment: Development
+INFO  08:50:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:50:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  08:54:03  Http GET is accesed
+INFO  08:54:17  Http GET by is accesed 5
+INFO  08:54:27  Http GET by is accesed 5
+INFO  08:54:32  Http GET is accesed
+INFO  08:55:18  Http GET by is accesed 4
+INFO  08:55:24  Http GET by is accesed 4
+INFO  08:55:25  Http GET is accesed
+INFO  08:56:47  Http GET is accesed
+INFO  08:57:00  Http GET by is accesed 2
+INFO  08:57:07  Http GET by is accesed 2
+INFO  08:57:07  Http GET is accesed
+INFO  09:57:23  Http GET is accesed
+INFO  09:57:45  Http GET by is accesed 8
+INFO  09:57:53  Http GET by is accesed 8
+INFO  09:57:53  Http GET is accesed
+INFO  09:59:19  Http GET by is accesed 5
+INFO  09:59:45  Http GET is accesed
+INFO  11:12:30 Application started. Press Ctrl+C to shut down.
+INFO  11:12:30 Application started. Press Ctrl+C to shut down.
+INFO  11:12:30 Hosting environment: Development
+INFO  11:12:30 Hosting environment: Development
+INFO  11:12:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
+INFO  11:12:30 Content root path: C:\Users\Devi\Source\Repos\VehicleService\VehicleService
